@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    
+    "debug": "node app.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  }
+}

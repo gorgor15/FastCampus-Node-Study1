@@ -1,0 +1,32 @@
+// Formatting, Linting
+// Formatting : Prettier
+// Linting : ESLint
+// 최소한 깔끔한 코드짤수있다.
+
+코드를 짜는중간중간 피드백을 받을수있다.
+여러사람이 코드를 관리할때 코드를 청결하게 관리할수있다.
+
+npm i --save-dev prettier
+nmpm install --save-dev eslint
+
+npm install --save-dev eslint-config-airbnb-base eslint-plugin-import
+
+npm install --save-dev eslint-config-prettier
+
+npm i --save-dev eslint-plugin-node
+
+.vscode 폴더를만들고 settings.json파일을 만듦
+{
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
+
+.prettierrc
+{
+    "semi" : false,
+    "singleQuote" : false
+}
+
+만들어줘야됨
