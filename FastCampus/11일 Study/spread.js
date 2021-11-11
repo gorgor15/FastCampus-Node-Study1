@@ -60,7 +60,7 @@ console.log(user)
 
 function foo(head, ...rest) {
   console.log(head) // 1
-  console.log(rest) // 2,3,4 가나옴
+  console.log(rest) // 2,3,4,5 가나옴
 }
 
-foo(1, 2, 3, 4)
+foo(1, 2, 3, 4, 5)
