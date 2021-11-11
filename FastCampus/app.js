@@ -11,34 +11,33 @@ const { count } = require("console")
 
 // console.log(x)
 
-
 // Closure 예시
 
-function and(x){
-    return function print(y){
-        return x + "and" + y
-    }
+function and(x) {
+  return function print(y) {
+    return x + "and" + y
+  }
 }
 
-const saltAnd = and('salt')
-console.log(saltAnd('pepper'))
-console.log(saltAnd('sugar'))
+const saltAnd = and("salt")
+console.log(saltAnd("pepper"))
+console.log(saltAnd("sugar"))
 
 // 서로 다른 Closure을 만듦 (함수는 같지만 환경은 서로다르다)
-const waterAnd = and('water')
-console.log(waterAnd('juice'))
+const waterAnd = and("water")
+console.log(waterAnd("juice"))
 
 var numCounter = 0
-function getCounter(){
-    numCounter +=1
-    var result = {
-        count,
-        total:0
-    }
-    function count(){
-        result.total +=1
-    }
-    return result
+function getCounter() {
+  numCounter += 1
+  var result = {
+    count,
+    total: 0,
+  }
+  function count() {
+    result.total += 1
+  }
+  return result
 }
 
 var counterA = getCounter()
@@ -47,4 +46,4 @@ counterA.count()
 
 var counterB = getCounter()
 counterB.count()
-console.log(counterA.total,counterB.total,numCounter)
+console.log(counterA.total, counterB.total, numCounter)
