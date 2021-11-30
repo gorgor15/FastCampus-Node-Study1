@@ -1,14 +1,15 @@
 {
   "scripts": {
     "debug": "node app.js",
-    "bulid": "esbuild main.js --bundle --outfile=build/main.js --target=node12.22"
+    "bulid": "esbuild main.js --bundle --outfile=build/main.js --target=node12.22",
+    "lint": "eslint 25일 study(npm)/**/*"
   },
   "engines": {
-    "node":"16.9.0"
+    "node": "16.9.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
-    "eslint": "^8.2.0",
+    "eslint": "^8.3.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
@@ -19,6 +20,8 @@
   },
   "dependencies": {
     "core-js": "^3.19.1",
-    "exbuild": "^0.2.2"
+    "decamelize": "^6.0.0",
+    "exbuild": "^0.2.2",
+    "upgrade": "^1.1.0"
   }
 }
