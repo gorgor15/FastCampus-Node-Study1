@@ -6,7 +6,7 @@ const fs = require("fs")
 
 const stream = require("stream")
 const zlib = require("zlib")
-const util = require("util")
+const util = require("util") // 프로미스 를 손쉽게 사용할수있음
 
 async function gzip() {
   return util.promisify(stream.pipeline)(
