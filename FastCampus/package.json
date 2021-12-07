@@ -8,6 +8,7 @@
     "node": "16.9.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@types/node": "^16.11.7",
     "eslint": "^8.3.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -22,6 +23,7 @@
     "core-js": "^3.19.1",
     "decamelize": "^6.0.0",
     "exbuild": "^0.2.2",
+    "express": "^4.17.1",
     "upgrade": "^1.1.0"
   }
 }
